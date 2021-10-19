@@ -12,14 +12,11 @@ int binarySearch(vector<int> &arr, int item, int low, int high)
     }
     return low;
 }
- 
-// Function to sort an array a[] of size 'n'
-void insertionSort(vector<int> &a)
-{
-    int i, loc, j, k, selected,n;
-    n = a.size();
 
-    for (i = 1; i < n; ++i)
+void binary_insertion_sort(vector<int> &a,int start,int end)
+{
+    int i, loc, j, k, selected;
+    for (i = start; i <= end; ++i)
     {
         j = i - 1;
         selected = a[i];
